@@ -32,6 +32,7 @@
     ".stylelintrc.js",
     ".prettierrc.js",
     "jest.config.js",
-    "mock/*"
-  ],
+    "mock/*",
+    "typings.d.ts"
+  ]
 }

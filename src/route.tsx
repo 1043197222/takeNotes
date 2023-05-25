@@ -1,30 +1,41 @@
-import { Navigate, useRoutes } from "react-router-dom";
-import { JSXElementConstructor, ReactElement } from "react";
-import Home from "./pages/home";
+import {Navigate, RouteObject, useRoutes} from "react-router-dom";
+import {JSXElementConstructor, ReactElement} from "react";
 import 拖动排序 from "./pages/拖动排序/拖动排序";
 import Grid from "./pages/grid布局/grid布局";
+import Layout from "./layout/Layout";
 
-const GetRouters = (props: any) => {
-  const routes: ReactElement<any, string | JSXElementConstructor<any>> | null =
-    useRoutes([
-      {
+type aaa = { name?: string } & RouteObject
+
+
+
+export const 路由数组: 路由类型[] = [
+    {
         path: "/",
-        element: <Navigate to="/home" />,
-      },
+        element: <Navigate to="/layout"/>,
+    },
 
-      {
-        path: "/home",
-        element: <Home />,
-      },
-      {
-        path: "/drag-sort",
-        element: <拖动排序 />,
-      },    {
-        path: "/grid-layout",
-        element: <Grid />,
-      },
-    ]);
-  return routes;
+    {
+        path: "/layout",
+        element: <Layout/>,
+        children: [
+            {
+                path: "/layout/drag-sort",
+                name: "拖动排序",
+                element: <拖动排序/>,
+            },
+            {
+                path: "/layout/grid-layout",
+                name: "Grid布局",
+                element: <Grid/>,
+            },
+        ]
+    },
+]
+const GetRouters = (props: any) => {
+
+    const routes: ReactElement<any, string | JSXElementConstructor<any>> | null =
+        useRoutes(路由数组);
+    return routes;
 };
 
 export default GetRouters;
