@@ -1,0 +1,187 @@
+.transition-main {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .divider {
+    margin: 10px 0;
+    background: #e7e7e8;
+    width: 100vw;
+    height: 10px;
+  }
+
+  .case-1 {
+    height: 100px;
+    width: 300px;
+    font-size: 28px;
+    color: white;
+    border: none;
+    background-color: blue;
+    transition-property: background-color;
+    transition-duration: 1000ms;
+
+  }
+
+  .case-1:hover {
+    background-color: green;
+  }
+
+  .case-2 {
+    width: 1000px;
+    border: 1px solid red;
+
+    .move {
+
+      margin: 20px;
+      width: 270px;
+      height: 50px;
+      padding: 10px 0;
+      background-color: rebeccapurple;
+      color: #fff;
+      line-height: 50px;
+      text-align: center;
+      border-radius: 5px;
+      font-size: 10px;
+
+
+      transform: translate(20px);
+      transition-duration: 3s;
+    }
+
+    .move:hover {
+      transform: translate(900px, 0);
+    }
+
+    .ease {
+      transition-timing-function: ease;
+    }
+
+    .linear {
+      transition-timing-function: linear;
+    }
+
+    .ease-in {
+      transition-timing-function: ease-in;
+    }
+
+    .ease-out {
+      transition-timing-function: ease-out;
+    }
+
+    .ease-in-out {
+      transition-timing-function: ease-in-out;
+    }
+  }
+
+  .case-3 {
+    height: 100px;
+    width: 300px;
+    font-size: 28px;
+    color: white;
+    border: none;
+    background-color: blue;
+    transition: background-color 3s ease-in 1s, color 2s ease 4s, border-radius 4s ease-out 6s;
+    transition-duration: 1000ms;
+
+  }
+
+  .case-3:hover {
+    background-color: green;
+    color: black;
+    border-radius: 50%;
+  }
+
+  .case-4 {
+    height: 100px;
+    width: 300px;
+    font-size: 28px;
+    color: white;
+    border: none;
+    background-color: blue;
+    transition: all;
+    transition-duration: 1000ms;
+
+  }
+
+  .case-4:hover {
+    background-color: green;
+    color: black;
+    border-radius: 50%;
+  }
+
+  .case-5 {
+    height: 200px;
+    width: 200px;
+    color: white;
+    border: none;
+    background-color: greenyellow;
+    transition-duration: 1000ms;
+
+  }
+
+  .case-5:hover {
+    transform: scale(.5);
+  }
+
+  .case-6 {
+    height: 200px;
+    width: 200px;
+    color: white;
+    border: none;
+    background-color: greenyellow;
+    transition-duration: 1000ms;
+
+  }
+
+  .case-6:hover {
+    transform: scale(3, 2);
+  }
+
+  .case-7 {
+    height: 200px;
+    width: 200px;
+    color: white;
+    border: none;
+    background-color: greenyellow;
+    transition-duration: 1000ms;
+
+  }
+
+  .case-7:hover {
+    transform: rotate(50deg);
+  }
+
+  .case-8 {
+    height: 200px;
+    width: 200px;
+    color: white;
+    border: none;
+    background-color: greenyellow;
+    transition-duration: 1000ms;
+
+  }
+
+  .case-8:hover {
+    transform: skew(50deg);
+  }
+
+  .case-9 {
+    height: 200px;
+    width: 200px;
+    color: white;
+    border: none;
+    background-color: greenyellow;
+    transition-duration: 1000ms;
+    transform-origin: top left;
+
+  }
+
+  .case-9:hover {
+    transform: rotate(50deg);
+  }
+}
