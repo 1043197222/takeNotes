@@ -1,0 +1,89 @@
+.divider {
+  background: red;
+  width: 100vw;
+  height: 1px;
+}
+
+
+.case-1 {
+  display: grid;
+  width: 300px;
+  height: 300px;
+  border: 1px solid greenyellow;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px;
+
+  .item {
+    padding: 10px;
+    border: 1px solid aqua;
+  }
+}
+
+.case-2 {
+  display: grid;
+  width: 300px;
+  height: 300px;
+  border: 1px solid greenyellow;
+  // repeat 第一个参数是重复的次数  第二个参数是重复的数值
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+
+  .item {
+    padding: 10px;
+    border: 1px solid aqua;
+  }
+}
+
+.case-3 {
+  display: grid;
+  width: 300px;
+  height: 300px;
+  border: 1px solid greenyellow;
+  grid-template-columns: repeat(2, 100px 20px 80px);
+
+  .item {
+    padding: 10px;
+    border: 1px solid aqua;
+  }
+}
+
+.case-4 {
+  display: grid;
+  width: 300px;
+  height: 300px;
+  border: 1px solid greenyellow;
+  grid-template-columns: repeat(auto-fill, 130px);
+
+  .item {
+    padding: 10px;
+    box-sizing: border-box;
+    height: 100px;
+    border: 1px solid aqua;
+  }
+}
+
+.case-5 {
+  display: grid;
+  border: 1px solid greenyellow;
+  grid-template-columns: 1fr 2fr;
+
+  .item {
+    padding: 10px;
+    box-sizing: border-box;
+    height: 100px;
+    border: 1px solid aqua;
+  }
+}
+
+.case-6 {
+  display: grid;
+  border: 1px solid greenyellow;
+  grid-template-columns:120px 1fr 2fr;
+
+  .item {
+    padding: 10px;
+    box-sizing: border-box;
+    height: 100px;
+    border: 1px solid aqua;
+  }
+}

@@ -1,2 +1,2 @@
-# takeNotes
-记录笔记
+### 安装sass
+`pnpm install --save-dev sass`
