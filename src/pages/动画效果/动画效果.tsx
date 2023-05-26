@@ -57,6 +57,12 @@ const 动画效果 = () => {
       <div className={'case-9'}></div>
       <div className={'divider'}></div>
     </div>
+
+    <div>
+      <div className={'title'}>10. 背景旋转覆盖</div>
+      <div className={'case-10'}>123</div>
+      <div className={'divider'}></div>
+    </div>
   </div>;
 };
 

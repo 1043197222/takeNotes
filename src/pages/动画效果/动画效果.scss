@@ -1,4 +1,5 @@
 .transition-main {
+  padding-left: 50px;
   width: 100%;
   height: 100%;
   overflow: auto;
@@ -183,5 +184,34 @@
 
   .case-9:hover {
     transform: rotate(50deg);
+  }
+
+  .case-10 {
+    color: #272727;
+    font-family: sans-serif;
+    font-size: 45px;
+    border: 5px solid #272727;
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    height: 200px;
+  }
+
+  .case-10::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    background-color: #fff200;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transform-origin: bottom left;
+    transform: rotate(-90deg);
+    transition-duration: 1s;
+  }
+
+  .case-10:hover::before {
+    transform: rotate(0deg);
   }
 }
