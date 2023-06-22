@@ -169,6 +169,9 @@ dependencies:
   typescript:
     specifier: ^4.9.5
     version: 4.9.5
+  vkbeautify:
+    specifier: ^0.99.3
+    version: 0.99.3
   web-vitals:
     specifier: ^2.1.4
     version: 2.1.4
@@ -189,6 +192,9 @@ devDependencies:
   '@types/lodash':
     specifier: ^4.14.194
     version: 4.14.194
+  '@types/vkbeautify':
+    specifier: ^0.99.2
+    version: 0.99.2
   lodash:
     specifier: ^4.17.21
     version: 4.17.21
@@ -2694,6 +2700,10 @@ packages:
   /@types/trusted-types@2.0.3:
     resolution: {integrity: sha512-NfQ4gyz38SL8sDNrSixxU2Os1a5xcdFxipAFxYEuLUlvU2uDwS4NUpsImcf1//SlWItCVMMLiylsxbmNMToV/g==}
     dev: false
+
+  /@types/vkbeautify@0.99.2:
+    resolution: {integrity: sha512-zbBKJTu2GRURMTj0vFSYRTnOB7Fz7uDZEFKLEkF1tbALUWHSPE84/VwCeJtM1YFOavtbp6xylFkLt6OxT6IG9A==}
+    dev: true
 
   /@types/ws@8.5.4:
     resolution: {integrity: sha512-zdQDHKUgcX/zBc4GrwsE/7dVdAD8JR4EuiAXiiUhhfyIJXXb2+PrGshFyeXWQPMmmZ2XxgaqclgpIC7eTXc1mg==}
@@ -9827,6 +9837,10 @@ packages:
   /vary@1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
     engines: {node: '>= 0.8'}
+    dev: false
+
+  /vkbeautify@0.99.3:
+    resolution: {integrity: sha512-2ozZEFfmVvQcHWoHLNuiKlUfDKlhh4KGsy54U0UrlLMR1SO+XKAIDqBxtBwHgNrekurlJwE8A9K6L49T78ZQ9Q==}
     dev: false
 
   /w3c-hr-time@1.0.2:
