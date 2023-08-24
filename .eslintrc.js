@@ -28,7 +28,7 @@ module.exports = {
         // 禁止使用 console
         'no-console': [1, {allow: ['error', 'warn']}],
         // 禁止使用 debugger
-        'no-debugger': 'error',
+        // 'no-debugger': '3',
         // 禁止重复的函数声明
         'no-dupe-args': 'error',
         // 禁止在 switch 中的某个 case 语句中出现重复的测试表达式

@@ -5,6 +5,9 @@ import Grid from './pages/grid布局/grid布局';
 import Layout from './layout/Layout';
 import 动画效果 from './pages/动画效果/动画效果';
 import 预览Xml from './pages/预览文件/预览xml';
+import 虚拟滚动 from './pages/虚拟滚动/虚拟滚动';
+import DIV写TABLE from './pages/DIV写TABLE/DIV写TABLE';
+import Echarts笔记 from './pages/Echarts笔记/Echarts笔记';
 
 type aaa = { name?: string } & RouteObject
 
@@ -38,6 +41,21 @@ export const 路由数组: 路由类型[] = [
         path: '/layout/web-preview-xml',
         name: '预览XML',
         element: <预览Xml />,
+      },
+      {
+        path: '/layout/virtual-scrolling',
+        name: '虚拟滚动',
+        element: <虚拟滚动 />,
+      },
+      {
+        path: '/layout/div-table',
+        name: 'div写table',
+        element: <DIV写TABLE />,
+      },
+      {
+        path: '/layout/echarts-node',
+        name: 'Echarts笔记',
+        element: <Echarts笔记 />,
       },
     ],
   },
