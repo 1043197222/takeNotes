@@ -8,6 +8,7 @@ import 预览Xml from './pages/预览文件/预览xml';
 import 虚拟滚动 from './pages/虚拟滚动/虚拟滚动';
 import DIV写TABLE from './pages/DIV写TABLE/DIV写TABLE';
 import Echarts笔记 from './pages/Echarts笔记/Echarts笔记';
+import 柱状图 from './pages/Echarts笔记/柱状图';
 
 type aaa = { name?: string } & RouteObject
 
@@ -56,6 +57,11 @@ export const 路由数组: 路由类型[] = [
         path: '/layout/echarts-node',
         name: 'Echarts笔记',
         element: <Echarts笔记 />,
+      },
+      {
+        path: '/layout/echarts-bar',
+        name: '柱状图',
+        element: <柱状图 />,
       },
     ],
   },

@@ -1,6 +1,11 @@
-import React from 'react'
-const Echarts笔记 = () => {
-    return <div>123</div>
-}
+import React from 'react';
+import 图表创建模版 from './图表创建模版';
+import './echarts.scss';
 
-export default Echarts笔记
+const Echarts笔记 = () => {
+  return <div className={'echarts-node'}>
+
+  </div>;
+};
+
+export default Echarts笔记;
