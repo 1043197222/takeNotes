@@ -1,11 +1,23 @@
-.echarts-bar{
+.echarts-bar {
   display: flex;
+  flex-direction: column;
   gap: 20px;
-  .bar-1{
-    width: 400px;
-    height: 300px;
+
+
+  .echarts-records {
+    display: flex;
+  }
+
+  .echarts-picture {
+    display: flex;
+    gap: 20px;
+    .bar-1 {
+      width: 400px;
+      height: 300px;
+    }
   }
 }
-.echarts-node{
 
+.echarts-node {
+  margin: 20px;
 }

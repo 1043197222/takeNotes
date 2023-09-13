@@ -151,7 +151,9 @@
   "devDependencies": {
     "@types/lodash": "^4.14.194",
     "@types/vkbeautify": "^0.99.2",
+    "highlight.js": "^11.8.0",
     "lodash": "^4.17.21",
+    "react-highlight": "^0.15.0",
     "sass": "^1.62.1"
   }
 }
